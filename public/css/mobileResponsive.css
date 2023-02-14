@@ -1,0 +1,326 @@
+#menuIcon{
+display: none;
+}
+@media only screen and (max-width: 1400px) {
+  .hero .left .inner h1,
+  .about h1,
+  .latestBlog h1,
+  .howWorks h1,
+  .contact h1,
+  .footerr h2,
+  .ourProgress h1,
+  .bestCourses h1 ,
+  .clientSay h1,
+  .heroBlog h1,
+  .blogDetail h1{
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .hero .left .inner p,
+  .about p,
+  .latestBlog p,
+  .latestBlog .row1 .card1 .card1Body p,
+  .howWorks p,
+  .contact p,
+  .footerr .secondPara,
+  .ourProgress p,
+  .bestCourses p,
+  .clientSay p,
+  .slick-list div .right p,
+  .blogDetail p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .hero .left .quote {
+    width: 300px;
+  }
+  .hero .right img {
+    width: 80%;
+  }
+  .latestBlog .row1 .card1 {
+    width: 32%;
+  }
+  .latestBlog .row1 .card1 .card1Body,
+  .allBlogs .row1 .left .row1 .card1 .card1Body  {
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .hero .left .heroBox {
+    width: 140px;
+  }
+  .latestBlog .row1 .card1 .card1Body h2 ,
+  .allBlogs .row1 .left .row1 .card1 .card1Body h2{
+    font-size: 20px;
+    line-height: 121%;
+  }
+  .latestBlog .row1 .card1 .footer p,
+  .allBlogs .row1 .left .row1 .card1 .footer p {
+    font-size: 15px;
+  }
+  .about .left .stars {
+    bottom: 0px;
+  }
+  .bestCourses .courseRow .coursecard1{
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .hero .left .inner h1,
+  .about h1,
+  .latestBlog h1,
+  .howWorks h1,
+  .contact h1,
+  .footerr h2,
+  .ourProgress h1,
+  .bestCourses h1,
+  .clientSay h1,
+  .heroBlog h1,
+  .blogDetail h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .hero .left .heroBox {
+    display: none;
+  }
+  .ourProgress .rowStep .step {
+    padding: 0px 15px;
+  }
+  .ourProgress .rowStep .step h5 {
+    font-weight: 400;
+  }
+  .slick-list .new{
+    flex-direction: column;
+  }
+  .slick-list div .left .star{
+    margin-bottom: 15px;
+  }
+  .allBlogs .row1{
+    flex-wrap: wrap;
+  }
+  .allBlogs .row1 .left{
+    width: 100%;
+    padding-right: 0px;
+  }
+  
+  .allBlogs .row1 .right{
+    width:100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero .left .quote {
+    top: 10px;
+    right: 10px;
+  }
+  .hero {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .hero .right {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .hero .right img {
+    width: 50%;
+    margin: 50px auto;
+  }
+  .hero .left {
+    width: 100%;
+  }
+  .hero .right img {
+    display: block;
+    position: static;
+  }
+  .about .row1 .card1 {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .latestBlog .row1 .card1 {
+    width: 48%;
+  }
+  .contact form {
+    flex-wrap: wrap;
+  }
+  .contact form .left,
+  .contact form .right {
+    width: 100%;
+  }
+  .contact form .right {
+    padding-top: 0px !important;
+    margin-top: 0px;
+  }
+
+  .contact form .left input {
+    width: 100%;
+  }
+
+  #emailPhone {
+    visibility: visible;
+  }
+  .contact form .left .emailPhone {
+    display: none;
+  }
+  .about .left .stars {
+    bottom: -10px;
+    right: 50px;
+  }
+  .ourProgress .rowStep{
+    flex-wrap: wrap;
+  }
+  .ourProgress .rowStep .step{
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .ourProgress .rowStep .step:nth-child(2){
+    border-right: none;
+  }
+  .bestCourses .courseRow .coursecard1{
+    width: 48%;
+  }
+  .heroBlog .ring {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero .left .quote {
+    display: none;
+  }
+  .about .row1 .card1 img {
+    margin-right: 15px;
+    width: 60px;
+  }
+  .about .row1 .card1,
+  .latestBlog .row1 .card1,
+  .howWorks,
+  .ourProgress {
+    margin-bottom: 50px;
+  }
+  .about .row1 .card1 .inner h4 {
+    font-size: 18px;
+    line-height: 129.5%;
+  }
+  .about .row1 .card1 .inner p {
+    font-size: 14px;
+    line-height: 129.5%;
+  }
+  .latestBlog .row1 .card1 {
+    width: 100%;
+  }
+  .contact form .right textarea {
+    height: 250px;
+  }
+  .footerr .footerBottom .row1 {
+    flex-wrap: wrap;
+  }
+  .footerr .footerBottom .row1 .logo {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footerr .footerBottom .row1 .logo img {
+    display: block;
+    margin: auto;
+  }
+  .footerr .footerBottom .row1 .links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footerr .footerBottom .row1 .links a:nth-child(2) {
+    margin: 0px 30px;
+  }
+  .footerr .footerBottom .row1 .social {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footerr {
+    padding: 50px 5% 20px 5%;
+  }
+  .about .left .stars {
+    top: 10px;
+    right: 20px;
+  }
+  .heroBlog form{
+    height: 68px;
+  }
+  .heroBlog form button{
+    height: 46px;
+  }
+  .allBlogs .row1 .left .tabsNext .prev,
+.allBlogs .row1 .left .tabsNext .next,
+.allBlogs .row1 .left .tabsNext .pageBtn{
+    width: 40px;
+    height: 40px;
+}
+}
+@media only screen and (max-width: 769px) {
+    .allBlogs .row1 .left .row1 .card1{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+  .hero .left {
+    padding: 40px 20px;
+  }
+  .hero .right img {
+    width: 80%;
+  }
+  .about .left .stars {
+    display: none;
+  }
+  .ourProgress .rowStep .step{
+    width: 100%;
+  }
+  .ourProgress .rowStep .step:nth-child(1){
+    border-right: none;
+  }
+  .bestCourses .courseRow .coursecard1{
+    width: 100%;
+  }
+  #menuIcon{
+    display: block;
+    cursor: pointer;
+    }
+    .header .menu ul{
+        position: fixed;
+        top: 0px;
+        bottom: 100%;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   transition: 0.4s;
+   cursor: url("./../img/cross.png"),auto;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 99999;
+    }
+    .header .menu ul li{
+        margin: 20px 0px;
+    }
+    .header .menu ul li a{
+        color: #fff!important;
+  
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero .left .inner h1,
+  .about h1,
+  .latestBlog h1,
+  .howWorks h1,
+  .contact h1,
+  .footerr h2,
+  .ourProgress h1,
+  .bestCourses h1 ,
+  .clientSay h1,
+  .heroBlog h1,
+  .blogDetail h1{
+    font-size: 25px;
+    line-height: 35px;
+  }
+}

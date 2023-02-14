@@ -1,0 +1,119 @@
+.footerr {
+  background: #c9a452;
+  width: 100%;
+  padding: 105px 5% 57px 5%;
+}
+.footerr .topPara {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  opacity: 0.6;
+  margin-bottom: 22px;
+}
+.footerr h2 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+.footerr .secondPara {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 33px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  max-width: 580px;
+  width: 100%;
+  margin-bottom: 45px !important;
+}
+.footerr button {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.11);
+  border-radius: 30px;
+  width: 197px;
+  height: 60px;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  display: block;
+  margin: 0px auto 50px auto;
+  cursor: pointer;
+}
+.footerr .thirdPara {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 47px;
+}
+.footerr .footerBottom {
+  padding-top: 12px;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footerr .footerBottom .row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerr .footerBottom .row1 .logo {
+  width: 300px;
+}
+.footerr .footerBottom .row1 .links {
+  display: flex;
+  align-items: center;
+}
+.footerr .footerBottom .row1 .links a:nth-child(2) {
+  margin: 0px 74px;
+}
+.footerr .footerBottom .row1 .links a {
+    font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+.footerr .footerBottom .row1 .links a:hover{
+    opacity: 0.7;
+}
+.footerr .footerBottom .row1 .social {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footerr .footerBottom .row1 .social a:hover img {
+  opacity: 0.7;
+}

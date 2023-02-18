@@ -26,6 +26,7 @@ class blogController extends Controller
     public function index()
     {
         $blogs = Blogs::latest()->get(); 
+
         return view('authRoutes.myBlogs', compact('blogs'));
     }
 

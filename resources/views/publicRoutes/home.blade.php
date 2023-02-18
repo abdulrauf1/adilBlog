@@ -125,164 +125,7 @@
       </div>
     </div>
 
-    <!-- how it works here ===================== -->
-    <div class="howWorks">
-      <h4>Latest Blogs</h4>
-      <h1>What does it cost?</h1>
-      <p>
-        We offer 4 credit builder plans plans to fit your goals and your budget.
-      </p>
-      <div class="row1">
-        <div class="price">
-          <div class="card1">
-            <img src="./img/offer1.svg" alt="" />
-            <p>SMALL BUILDER</p>
-            <h4>$ 25/mo</h4>
-            <p>for 24 months</p>
-            <div class="admin">
-              <div class="row1">
-                <p>Admin fee</p>
-                <p>$9</p>
-              </div>
-              <div class="row1">
-                <p>Total Payments</p>
-                <p>$600</p>
-              </div>
-              <div class="row1">
-                <p>Get Back</p>
-                <p>$520</p>
-              </div>
-              <div class="row1">
-                <p>Final Costs</p>
-                <p>$89</p>
-              </div>
-            </div>
-            <a href="#">Get Started</a>
-          </div>
-          <div class="bottom">
-            <div class="inner">
-              <h6>Interest rate</h6>
-              <h6>14.14%</h6>
-            </div>
-            <div class="inner">
-              <h6>Annual Percentage Rate</h6>
-              <h6>15.92%</h6>
-            </div>
-          </div>
-        </div>
-        <div class="price">
-          <div class="card1">
-            <img src="./img/offer2.svg" alt="" />
-            <p>SMALL BUILDER</p>
-            <h4>$ 25/mo</h4>
-            <p>for 24 months</p>
-            <div class="admin">
-              <div class="row1">
-                <p>Admin fee</p>
-                <p>$9</p>
-              </div>
-              <div class="row1">
-                <p>Total Payments</p>
-                <p>$600</p>
-              </div>
-              <div class="row1">
-                <p>Get Back</p>
-                <p>$520</p>
-              </div>
-              <div class="row1">
-                <p>Final Costs</p>
-                <p>$89</p>
-              </div>
-            </div>
-            <a href="#">Get Started</a>
-          </div>
-          <div class="bottom">
-            <div class="inner">
-              <h6>Interest rate</h6>
-              <h6>14.14%</h6>
-            </div>
-            <div class="inner">
-              <h6>Annual Percentage Rate</h6>
-              <h6>15.92%</h6>
-            </div>
-          </div>
-        </div>
-        <div class="price">
-          <div class="card1">
-            <img src="./img/offer3.svg" alt="" />
-            <p>SMALL BUILDER</p>
-            <h4>$ 25/mo</h4>
-            <p>for 24 months</p>
-            <div class="admin">
-              <div class="row1">
-                <p>Admin fee</p>
-                <p>$9</p>
-              </div>
-              <div class="row1">
-                <p>Total Payments</p>
-                <p>$600</p>
-              </div>
-              <div class="row1">
-                <p>Get Back</p>
-                <p>$520</p>
-              </div>
-              <div class="row1">
-                <p>Final Costs</p>
-                <p>$89</p>
-              </div>
-            </div>
-            <a href="#">Get Started</a>
-          </div>
-          <div class="bottom">
-            <div class="inner">
-              <h6>Interest rate</h6>
-              <h6>14.14%</h6>
-            </div>
-            <div class="inner">
-              <h6>Annual Percentage Rate</h6>
-              <h6>15.92%</h6>
-            </div>
-          </div>
-        </div>
-        <div class="price">
-          <div class="card1">
-            <img src="./img/offer4.svg" alt="" />
-            <p>SMALL BUILDER</p>
-            <h4>$ 25/mo</h4>
-            <p>for 24 months</p>
-            <div class="admin">
-              <div class="row1">
-                <p>Admin fee</p>
-                <p>$9</p>
-              </div>
-              <div class="row1">
-                <p>Total Payments</p>
-                <p>$600</p>
-              </div>
-              <div class="row1">
-                <p>Get Back</p>
-                <p>$520</p>
-              </div>
-              <div class="row1">
-                <p>Final Costs</p>
-                <p>$89</p>
-              </div>
-            </div>
-            <a href="#">Get Started</a>
-          </div>
-          <div class="bottom">
-            <div class="inner">
-              <h6>Interest rate</h6>
-              <h6>14.14%</h6>
-            </div>
-            <div class="inner">
-              <h6>Annual Percentage Rate</h6>
-              <h6>15.92%</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  
 
      <!-- how it works here ===================== -->
      <div class="howWorks">
@@ -307,7 +150,7 @@
               <p>Simple Estate Plan</p>
               <p>Financial Goal Setting</p>
               <p>$ {{$plans[0]->paymentAmount}} set-up Free</p>
-              <a href="{{url('getPlan',$plans[0]->id) }}">Get Started</a>
+              <a href="{{url('proceedPayment',$plans[0]->id) }}">Get Started</a>
             </div>
           </div>
         </div>
@@ -327,7 +170,7 @@
               <p>Financial Goal Setting</p>
               <p>$ {{$plans[1]->paymentAmount}} set-up Free</p>
             </div>
-            <a href="{{url('getPlan',$plans[1]->id) }}">Get Started</a>
+            <a href="{{url('proceedPayment',$plans[1]->id) }}">Get Started</a>
           </div>
         </div>
         <div class="price">
@@ -343,7 +186,7 @@
               <p>Financial Goal Setting</p>
               <p>$ {{$plans[2]->paymentAmount}} set-up Free</p>
             </div>
-            <a href="{{url('getPlan',$plans[1]->id) }}">Get Started</a>
+            <a href="{{url('proceedPayment',$plans[2]->id) }}">Get Started</a>
           </div>
           <div class="bottom">
             <div class="inner">
@@ -358,7 +201,13 @@
     </div>
 
     <!-- contact section here =================== -->
-    <div class="contact">
+    <div class="contact" id="contactUs">
+      @if(session()->has('success'))
+            <div class="alert">
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                {{ session()->get('message') }}.
+            </div>
+          @endif
       <h4>Latest Blogs</h4>
       <h1>What does it cost?</h1>
       <p>
@@ -366,14 +215,34 @@
         sint. <br />
         Velit officia consequat duis enim velit mollit. Exercitation venia
       </p>
-      <form action="#">
+      <form action=" {{ url('contactUs') }} " method="post">
+        @csrf
+       
         <div class="left">
           <label for="name">FIRST NAME</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="firstName" id="firstName" class="@error('firstName') is-invalid @enderror" required/>
+          @error('firstName')
+              <span class="invalid-feedback" role="alert">
+                <strong><h5>{{ $message }}</h5></strong>
+              </span>
+          @enderror
+          
           <label for="name">LAST NAME</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="lastName" id="lastName" class="@error('lastName') is-invalid @enderror" required />
+          @error('lastName')
+              <span class="invalid-feedback" role="alert">
+                <strong><h5>{{ $message }}</h5></strong>
+              </span>
+          @enderror
+
           <label for="name">EMAIL</label>
-          <input type="text" name="name" id="name" />
+          <input type="email" name="email" id="name" class="@error('email') is-invalid @enderror" required />
+          @error('email')
+              <span class="invalid-feedback" role="alert">
+                <strong><h5>{{ $message }}</h5></strong>
+              </span>
+          @enderror
+
           <div class="emailPhone">
             <div class="ringPhone">
               <img src="./img/ringPhone.svg" alt="phone" />
@@ -398,7 +267,14 @@
             name="message"
             id="message"
             placeholder="LEAVE A MESSAGE FOR US"
+            class="@error('message') is-invalid @enderror" required
           ></textarea>
+          @error('message')
+              <span class="invalid-feedback" role="alert">
+                <strong><h5>{{ $message }}</h5></strong>
+              </span>
+          @enderror
+          
           <button type="submit" name="submit">SUBMIT</button>
           <div id="emailPhone">
             <div class="ringPhone">

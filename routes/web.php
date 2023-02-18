@@ -19,13 +19,21 @@ Route::get('/about', [App\Http\Controllers\publicController::class, 'about'])->n
 Route::get('/blogs', [App\Http\Controllers\publicController::class, 'blogs'])->name('blogs');
 Route::get('/blogSearch', [App\Http\Controllers\publicController::class, 'search'])->name('blogs');
 Route::get('/blogDeatils/{id}', [App\Http\Controllers\publicController::class, 'blogDeatails'])->name('blogs');
-Route::get('/getPlan/{id}', [App\Http\Controllers\publicController::class, 'getPlan'])->name('paymentPlan');
+Route::get('/proceedPayment/{id}', [App\Http\Controllers\publicController::class, 'proceedPayment'])->name('proceedPayment');
+Route::post('/contactUs', [App\Http\Controllers\publicController::class, 'contactUs'])->name('contactUs');
 
 Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
 Route::get('/myAccount', [App\Http\Controllers\HomeController::class, 'myAccount']);
 Route::post('/myAccount', [App\Http\Controllers\HomeController::class, 'update']);
+
+Route::get('/getUpdatePlan/{id}', [App\Http\Controllers\HomeController::class, 'getUpdatePlan']);
+Route::post('/updatePlan/{id}', [App\Http\Controllers\HomeController::class, 'updatePlan']);
+
+
+Route::post('/proceedPayment', [App\Http\Controllers\StripePaymentController::class, 'paymentPost'])->name('stripe.post');
+
 
 
 Route::get('/manageUsers', [App\Http\Controllers\userController::class, 'index'])->name('manageUsers');

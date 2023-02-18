@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Blogs;
 use App\Models\PaymentPlans;
+use Mail;
 
 class publicController extends Controller
 {
@@ -61,9 +62,43 @@ class publicController extends Controller
         return view('publicRoutes.blogDetails', compact('blogDetail','blogs'));
     }
 
-    public function getPlan($id)
+    public function proceedPayment($id)
     {
-        return view('publicRoutes.getPlans');
+        $planDetail = PaymentPlans::findOrFail($id);
+        return view('publicRoutes.proceedPayment',compact('planDetail'));
+    }
+
+    public function contactUs()
+    {
+        // $data = request()->validate([
+        //     'firstName' => 'required',
+        //     'lastName' => 'required',
+        //     'email' => 'required|email',
+        //     'message' => 'required'
+        // ]);
+        // Mail::send('mail', [
+        //     'name' => $data['firstName'].$data['lastName'],
+        //     'email' => $data['email'],
+        //     'subject' => "Message from Blog App",
+        //     'message' => $data['message'] ],
+        //         function ($message) {
+        //             $message->from('blogapp.adil@gmail.com');
+        //             $message->to('abdulrauf5097911@gmail.com', 'Your Name')
+        //             ->subject('sd');
+        //         });
+
+        // return redirect('/#contactUs')->with('success', 'Thanks for contacting me, I will get back to you soon!');
+
+
+        $user = [
+            'name' => 'Websolutionstuff',
+            'info' => 'This is gmail example in laravel 9'
+        ];
+    
+        \Mail::to('test@example.com')->send(new \App\Mail\GmailTestMail($user));
+    
+        dd("Successfully send mail..!!");
+
     }
 
 }

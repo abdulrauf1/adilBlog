@@ -791,3 +791,24 @@ td {
 .closebtn:hover {
   color: black;
 }
+
+.tabsNext {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.tabsNext .prev,
+.tabsNext .next {
+  width: 60px;
+  height: 58px;
+  border: 1px solid #393a3c;
+  border-radius: 11px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.tabsNext .next img {
+  transform: rotate(180deg);
+}

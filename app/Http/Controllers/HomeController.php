@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use App\Models\PaymentPlans;
+use App\Models\PaymentHistory;
 
 
 class HomeController extends Controller
@@ -26,7 +28,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('authRoutes.admin');
+        
+        $paymentPlans = PaymentPlans::latest()->get(); 
+        
+        $paymentHistory = PaymentHistory::join('payment_plans', 'payment_histories.payment_plans_id', '=', 'payment_plans.id')->paginate(5);
+        
+        return view('authRoutes.admin', compact('paymentPlans','paymentHistory'));
     }
 
     public function myAccount()
@@ -70,6 +77,29 @@ class HomeController extends Controller
         return back()->with("message", "Password Updated Successfully!");
     }
 
+    public function getUpdatePlan($id)
+    {
+        $plan = PaymentPlans::find($id)->get();
+        
+        return view('authRoutes.getUpdatePlan',compact('plan'));
+    }
+    
+    public function updatePlan($id)
+    {
+
+
+         #Update the Plan
+         PaymentPlans::whereId($id)->update([
+            'title' => request('title'),
+            'description' => request('desc'),
+            'paymentInstallments' => request('paymentInstallments'),
+            'paymentAmount' => request('paymentAmount')
+        ]);
+
+        
+        return redirect('/admin')->with("message", "Payment Plan Updated Successfully!");
+        
+    }
     
     
 }

@@ -31,10 +31,10 @@
               </div>
               <div class="rightt">
                 <div class="editDelete">
-                  <form id="edit-blog" action="{{ url('/editBlog',$blog->id) }}" method="POST" >
+                  <!-- <form id="edit-blog" action="{{ url('/editBlog',$blog->id) }}" method="POST" >
                       @csrf
                       <button class="no-style" type="submit" ><img style="cursor: pointer;" src="./../img/edit.svg" alt=""></button>
-                    </form> 
+                    </form>  -->
                     <form id="delete-blog" action="{{ url('/deleteBlog',$blog->id) }}" method="POST" >
                       @csrf
                       <button class="no-style" type="submit" ><img style="cursor: pointer;" src="./../img/delete.svg" alt=""></button>
